@@ -1,0 +1,52 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="pt-br">
+    <head>
+         <title>Aula 15 - Array - Vetor - Parte 3 - Javascript</title>
+         <meta charset="utf-8"/>
+         
+         <script>
+
+            /* 
+            
+               unshift - adiciona no inicio
+               push - adiciona no final
+               shift - remove o primeiro elemento
+               pop - remove o último elemento
+               splice - remove o numero/quantidade indicado
+               
+            */   
+
+            var mochila=[];
+
+             mochila.push("Faca");
+             mochila.push("Corda");
+             mochila.push("Pederneira");
+             mochila.push("Chave");
+             mochila.unshift("Lanterna");
+             mochila.unshift("Pedra");
+
+             mochila.pop(); 
+             mochila.pop(); 
+
+             mochila.shift();
+
+             mochila.splice(1,2);
+             mochila.splice(0,1);
+
+             
+             document.write(mochila[0]+"<br>");
+             document.write(mochila[1]+"<br>");
+             document.write(mochila[2]+"<br>"); 
+             document.write(mochila[3]+"<br>");  
+             document.write(mochila[4]+"<br>");  
+             document.write(mochila[5]+"<br>");              
+
+         </script>
+
+    </head>
+    <body>
+
+
+    </body>
+</html>
