@@ -1,0 +1,42 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="pt-br">
+
+
+<head>
+    <title>Aula 23 - Manipular elementos html com Javascript - getElementById</title>
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+    <p id="texto">Teste Choi</p>
+    <div id="caixa"></div>
+
+</body>
+
+<script>
+
+    var txt = document.getElementById("texto");
+
+    document.getElementById("texto").style.color = "#f00"
+    document.getElementById("texto").style.fontSize = "50px"
+    document.getElementById("texto").style.textAlign = "center"
+
+    var cx = document.getElementById("caixa");
+
+    cx.style.border = "1px solid #000";
+    cx.style.width = "300px";
+    cx.style.height = "300px";
+    cx.style.backgroundColor = "#aaa";
+    cx.style.width = "33%";
+    cx.style.marginLeft = 'auto';
+    cx.style.marginRight = "auto";
+    // cx.style.display = 'none';
+
+    
+
+</script>
+
+</html>

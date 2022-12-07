@@ -9,15 +9,24 @@
 
     <script>
 
-        var num;
+        //Finally é executado com erro ou não
+
+        var num;//Máximo 10
 
         try {
-            num = 10 / 0;
-            document.write("ERRO: " + num);
+            num = prompt("Digite um valor:");
+            if (num > 10) {
+
+                throw new Error("Valor inválido, o valor deve ser menor ou igual a 10!<br>");
+            }
+            document.write("Valor Digitado: " + num + "<br>");
         } catch (exception) {
-            // document.write("ERRO " + exception.message);
-            // console.log("Mensagem de erro: " + exception.message);
+            document.write("ERROR: " + exception.message);
+        } finally {
+            document.write("<br>Fim do tratamento");
         }
+
+
 
     </script>
 
