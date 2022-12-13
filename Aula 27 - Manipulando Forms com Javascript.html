@@ -72,6 +72,17 @@
         fm = document.forms["curso1"].elements[1].value;
         document.write("<br>" + fm + "<br>");
 
+        document.write(document.getElementById("curso1").elements[0].value)
+
+        document.write(document.getElementById("curso1").elements[0].value);
+
+        var form1=document.forms[0];
+        var el=form1.elements;
+
+        for(var i = 0; i < el.length - 1; i++){
+            el[i].style.backgroundColor = "#ddd"
+        }
+
     </script>
     
 </body>
