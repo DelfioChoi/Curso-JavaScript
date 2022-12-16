@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="winewdateh=device-width, initial-scale=1.0">
+    <title>Aula 29 - Math - Métodos e Constantes matemáticas</title>
+
+    <script>
+
+        var valor = 11.5;
+        var angulo = 0;
+        var cosseno = Math.cos(angulo * Math.PI / 180);
+        var seno = Math.sin(angulo * Math.PI / 180);
+
+        var pi = Math.PI;
+        var euler = Math.E;
+        var raizquad = Math.SQRT2;
+        var absoluto = Math.abs(valor);
+        var arredondar = Math.round(valor);
+        var arredondcima = Math.ceil(valor);
+        var arredondbaixo = Math.floor(valor);
+        var elevarnum = Math.pow(valor, 2);
+        var raizdeumnumero = Math.sqrt(valor);
+        var raizdeumnumero = Math.sqrt(valor);
+        var valoraleatorio0e1 = Math.random();
+        var valoraleatespecifico = Math.random() * valor;
+        var valormax = Math.max(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        var valormin = Math.min(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        var valoraleatespecificoarredon;
+         function valoraleatespecificoarredon() {
+            valoraleatespecifico(arredondar)
+            return 0;
+        }
+
+        document.write("Valor de PI: " + pi);
+        document.write("<br>" + "Valor do número de Euler: " + euler);
+        document.write("<br>" + "Valor da raíz quadrada: " + raizquad);
+        document.write("<br>" + "Valor do número absoluto: " + absoluto);
+        document.write("<br>" + "Valor do número arredondado: " + arredondar);
+        document.write("<br>" + "Valor do número arredondado para cima: " + arredondcima);
+        document.write("<br>" + "Valor do número arredondado para baixo: " + arredondbaixo);
+        document.write("<br>" + "Valor do número elevado a 2: " + elevarnum);
+        document.write("<br>" + "Valor da raíz quadrada de qualquer número: " + raizdeumnumero);
+        document.write("<br>" + "Valor de número aleatório entre 0 e 1: " + valoraleatorio0e1);
+        document.write("<br>" + "Valor de número aleatório específico: " + valoraleatespecifico);
+        document.write("<br>" + "Valor de número aleatório específico arredondado: " + valoraleatespecificoarredon);
+        document.write("<br>" + "Valor maior de uma sequência: " + valormax);
+        document.write("<br>" + "Valor menor de uma sequência: " + valormin);
+
+        for (var i = 0; i <= 6; i++) {
+            document.write("<br>Sorteio de 6 números menor ou igual a " + valor + ": " + Math.round(Math.random() * valor + 1) + "<br>");
+
+        }
+
+        document.write("Ângulo: " + angulo + "<br>" + "Cosseno: " + cosseno + "<br>Seno: " + seno)
+
+
+        // x = (arredondar + valoraleatespecifico)
+
+        // function aredondar(x) {
+        //     return x.toFixed(0);;
+        // }
+
+        // document.write('teste: ' + aredondar(arredondar) + aredondar(valoraleatespecifico) + '<br>')
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

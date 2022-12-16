@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="winewdateh=device-width, initial-scale=1.0">
+    <title>Aula 30 - Funções - Criando suas próprias funções</title>
+
+    <script>
+
+        var numeros = [10, 2, 5, 30, 25, 19, 20, 50];
+
+        function media(nums) {
+            let tam = nums.length;
+            let soma = 0;
+            for (var i = 0; i < tam; i++) {
+                soma += nums[i];
+            }
+            return Math.round(soma / tam);
+        }
+
+        document.write(media(numeros) + "<br>");
+
+        function soma(n1, n2) {
+            let res = n1 + n2;
+            document.write(res + "<br>");
+        }
+
+        soma(5, 5);
+        soma(10, 7);
+        soma(30, 100);
+
+        function escreve() {
+            document.write("<br>testezão")
+        }
+
+        escreve();
+
+        function soma2(n1, n2) {
+            return n1 + n2;
+
+        }
+
+        document.write("<br>" + soma2(3, 7));
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
